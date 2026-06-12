@@ -21,7 +21,7 @@ void FileSystem::getAllFiles(std::string_view dir, std::vector<std::string>& fil
     }
 }
 
-std::vector<std::string> FileSystem::getTextFiles(const std::string& rootDir) {
+std::vector<std::string> FileSystem::getTextFiles(std::string_view rootDir) {
     std::vector<std::string> files;
     getAllFiles(rootDir, files);
     return files;
